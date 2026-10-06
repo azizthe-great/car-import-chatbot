@@ -1,0 +1,14 @@
+# Local environment and configuration
+.env
+.env.*
+!/.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local XAMPP or database artifacts
+*.sql.gz
+*.log

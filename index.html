@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Import Customer Care</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <section class="lead-panel">
+        <h2>Request a car import quote</h2>
+        <form id="leadForm" class="lead-form">
+          <div class="field-row">
+            <input type="text" name="name" placeholder="Full name" required />
+            <input type="tel" name="phone" placeholder="Phone number" required />
+          </div>
+
+          <div class="field-row">
+            <input type="email" name="email" placeholder="Email address" required />
+            <input type="text" name="car_model" placeholder="Car model" required />
+          </div>
+
+          <div class="field-row single">
+            <input type="text" name="country" placeholder="Destination country" required />
+          </div>
+
+          <textarea name="message" rows="3" placeholder="Tell us what you want to import"></textarea>
+          <button type="submit">Send inquiry</button>
+        </form>
+      </section>
+
+      <div class="chat-wrapper">
+        <header class="chat-header">
+          <div>
+            <h1>Car Import Support</h1>
+            <p>Customer care assistant</p>
+          </div>
+        </header>
+
+        <main class="chat-window" id="chatWindow">
+          <div class="message bot">
+            <p>Hello! I can help with car import questions. Ask me about pricing, shipping, documents, customs, or delivery.</p>
+          </div>
+        </main>
+
+        <form id="chatForm" class="chat-form">
+          <input
+            id="userInput"
+            type="text"
+            placeholder="Type your question here..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>

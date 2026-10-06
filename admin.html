@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Import Admin Dashboard</title>
+    <link rel="stylesheet" href="assets/admin.css" />
+  </head>
+  <body>
+    <div class="admin-shell">
+      <aside class="sidebar">
+        <h1>Admin</h1>
+        <nav>
+          <a href="index.html">Chatbot</a>
+          <a href="admin.html" class="active">Dashboard</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <section class="panel">
+          <h2>Add FAQ</h2>
+          <form id="faqForm" class="faq-form">
+            <input type="text" id="faqKeyword" placeholder="Keyword (e.g. customs)" required />
+            <textarea id="faqResponse" rows="3" placeholder="Bot response" required></textarea>
+            <button type="submit">Save FAQ</button>
+          </form>
+          <div id="faqStatus" class="status"></div>
+          <div id="faqList" class="list-box" style="margin-top: 16px;"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Customer Inquiries</h2>
+          <div id="inquiriesList" class="list-box"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Recent Chat Logs</h2>
+          <div id="logsList" class="list-box"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/admin.js"></script>
+  </body>
+</html>
